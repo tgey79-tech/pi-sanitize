@@ -23,8 +23,17 @@ are or which repository it came from.
 
 ## Usage
 
+### Quick install (one-liner)
+
 ```bash
-# Drop the script onto the Pi (e.g. into ~/tools/) and:
+curl -fsSL https://raw.githubusercontent.com/tgey79-tech/pi-sanitize/main/pi-sanitize.sh -o pi-sanitize.sh
+chmod +x pi-sanitize.sh
+sudo ./pi-sanitize.sh --dry-run            # preview first
+```
+
+### Run
+
+```bash
 sudo bash pi-sanitize.sh --dry-run            # preview only
 sudo bash pi-sanitize.sh                      # interactive, asks per step
 sudo bash pi-sanitize.sh --yes                # unattended
